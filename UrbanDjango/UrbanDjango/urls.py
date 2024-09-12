@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import strat_page, Next_page
+from task3.views import Title, NotLive, Live
 from django.views.generic import TemplateView
 
 
@@ -24,4 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',strat_page),
     path('1/',Next_page.as_view()),
+    path('title/',Title.as_view()),
+    path('title/live/',Live.as_view()),
+    path('title/not_live/',NotLive.as_view()),
 ]

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<h2>{{ text }}</h2>
+                    <ul>
+                        {% for user in other %}
+                            <li class="list-group-item"><a href = "{{user.extra_context.url}}">{{user.extra_context.name}}</a></li>
+                        {% endfor %}
+                        <!-- Напишите свой код здесь (перебор пользователей) -->
+                    </ul>
+
+</body>
+</html>
