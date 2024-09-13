@@ -17,7 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from task2.views import strat_page, Next_page
-from task3.views import Title, NotLive, Live
+# from task3.views import Title, NotLive, Live
+from task4.views import Title, NotLive, Live, Menu
 from django.views.generic import TemplateView
 
 
