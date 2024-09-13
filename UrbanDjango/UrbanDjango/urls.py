@@ -19,14 +19,19 @@ from django.urls import path
 from task2.views import strat_page, Next_page
 # from task3.views import Title, NotLive, Live
 from task4.views import Title, NotLive, Live, Menu
+from task5.views import sign_up_by_html,sign_up_by_django
 from django.views.generic import TemplateView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',strat_page),
+    # path('',strat_page),
+
     path('1/',Next_page.as_view()),
     path('title/',Title.as_view()),
     path('title/live/',Live.as_view()),
     path('title/not_live/',NotLive.as_view()),
+    path('',sign_up_by_html),
+    path('django_sign_up/',sign_up_by_django),
+
 ]
